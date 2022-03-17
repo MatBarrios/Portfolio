@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
+
+:root {
+    --background: #303134;
+    --primary-font-color: #1eb2b4;
+    /* --top-bottom-color: #001219; */
+    --top-bottom-color: #171717;
+    --skills-hover-color: #5c4d7d;
+    --skills-color: #723c70;
+    --work-border: #6c757d;
+    --top-bottom-color: #1e1f20;
+    --square-top: #1b1c1d;
+    --square-r:#1e1f20; 
+    --square-l:#222324;
+}   
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Saira', sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    color: whitesmoke;
+    /* margin-left: 1rem;
+    margin-right: 1rem; */
+    margin: 0 auto;
+}
+
+.container1, .container2, .container3, .container4, .container5, .container6, .container7 {
+    width: 100%;
+}
+
+.container2 {
+    padding-bottom: 1rem;
+}
+
+.navbar {
+    padding-top: 1rem;
+}
+
+#nav_bar ul {    
+    position: relative;
+    bottom: 3rem;
+    right: 10%;
+    float: right;
+}
+
+#nav_bar li {
+    display: inline-block;
+}
+
+
+#nav_bar a {
+    padding-left: 2rem;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+#nav_bar a:hover{
+    color: #ffbd00;
+}
+
+h1{
+    width: 90%;
+    font-size: 80%;
+    color: var(--primary-font-color );
+    margin-left: 1.5rem;
+}
+
+h1 a {
+    text-decoration: none;
+    color: var(--primary-font-color);
+}
+
+#big__header {
+    width: 100%;
+    padding-top:3%;
+    padding-bottom: 30%; /*era 75*/
+    /* background-color: var(--top-bottom-color); */
+    background-color: var(--square-r);
+    background-image: linear-gradient(30deg, var(--square-top) 12%, transparent 12.5%, transparent 87%, var(--square-top) 87.5%, var(--square-top)),
+    linear-gradient(150deg, var(--square-top) 12%, transparent 12.5%, transparent 87%, var(--square-top) 87.5%, var(--square-top)),
+    linear-gradient(30deg, var(--square-top) 12%, transparent 12.5%, transparent 87%, var(--square-top) 87.5%, var(--square-top)),
+    linear-gradient(150deg, var(--square-top) 12%, transparent 12.5%, transparent 87%, var(--square-top) 87.5%, var(--square-top)),
+    linear-gradient(60deg, var(--square-l) 25%, transparent 25.5%, transparent 75%, var(--square-l) 75%, var(--square-l)), 
+    linear-gradient(60deg, var(--square-l) 25%, transparent 25.5%, transparent 75%, var(--square-l) 75%, var(--square-l));
+    background-size:40px 70px;
+    background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px;
+}
+
+.home {
+    text-align: center;
+    position: relative;
+    bottom: 0.7rem;
+}
+
+#name__intro {
+    /* text-align: center; */
+    width: 100%;
+    /* margin-left: 1.5rem; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    position: relative;
+    top: 2rem;
+}
+
+.subtitle {
+    font-size: 110%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 3rem;
+
+}
+ 
+
+.subtitle {
+  background: 50% 100% / 50% 50% no-repeat
+              radial-gradient(ellipse at bottom, #ffbd00, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: reveal 3000ms ease-in-out forwards 200ms,
+             glow 2500ms linear infinite 2000ms;
+
+}
+
+@keyframes reveal {
+    80%{
+      letter-spacing: 1px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+@keyframes glow {
+    40% {
+      text-shadow: 0 0 6px #fff;
+    }
+  }
+ 
+
+#footer__line {
+    width: 50%;
+    position: relative;
+    bottom: -8px;
+}
+
+
+#img__meli, #img__this, #img__mma, #img__portfolio1 {
+    width: 65%;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color:#ffbd00;
+}
+
+.projects {
+    text-align: center;
+}
+
+.pie__img {
+    font-size: 70%;
+    padding-bottom: 1.5rem;
+    width:65%;
+    position: relative;
+    left: 18%;
+}
+
+#img__meli:hover, #img__this:hover, #img__mma:hover, #img__portfolio1:hover {
+    box-shadow: 3px 3px 10px #ffbd00; 
+} 
+
+#work__title, #about__title, #contact__title, #skills__title{
+    width: 90%;
+    margin-left: 1.5rem;
+    text-shadow: 2px 2px var(--skills-hover-color);
+}
+
+.work__subtitle {
+    width: 100%;
+}
+
+#lets__talk {
+    width: 100%;
+}
+
+#about__text {
+    width: 85%;
+    margin-left: 2rem;
+
+}
+
+.skills__ul {
+    width: 85%;
+    text-align: left;
+
+}
+
+.skill__box {
+    list-style: none;
+    display: inline-block;
+    padding: 1rem;
+    background-color: var(--skills-color);
+    margin: 0.5rem;
+    border-radius: 8px;
+}
+
+.skill__box:hover {
+    background-color: var(--skills-hover-color);
+}
+
+#work__title, #about__title, #contact__title, #skills__title {
+    color: var(--primary-font-color);
+    font-size: 150%;
+}
+
+#lets__talk {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+#telegram__link {
+    text-decoration: none;
+}
+
+#in__icon, #git__icon {
+    color: whitesmoke;
+    margin-left: 2rem;
+}
+
+#in__icon:hover, #git__icon:hover{
+    color:#ffbd00;
+}
+
+#mail {
+    width: fit-content;
+    position: relative;
+    left: 45%;
+    bottom: 3rem;
+    font-size: small;
+}
+
+#mail__icon {
+    position: relative;
+    top: 0.3rem;
+}
+
+#other__contact {
+    padding-top: 1rem;
+}
+
+.container5 {
+    padding-bottom: 2rem;
+}
+
+#rights {
+    text-align: right;
+    padding-right: 1.5rem;
+    font-size: smaller;
+}
+
+footer {
+    background-color: var(--top-bottom-color);
+    width: 100%;
+    margin: 0; 
+    padding-bottom: 0.2rem;
+}
+
+
+/* BUTTON  TELEGRAM*/
+
+button {
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+   }
+   
+   button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+   }
+   
+   button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+   }
+   
+   button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+   }
+   
+   button:hover span {
+    transform: translateX(5.3em);
+   }
+   
+   button:active {
+    transform: scale(0.95);
+   }
+   
+   @keyframes fly-1 {
+    from {
+     transform: translateY(0.1em);
+    }
+   
+    to {
+     transform: translateY(-0.1em);
+    }
+   }
+
+
+
+/* MEDIA 600PX */
+
+   @media (min-width:600px){
+
+    #img__meli, #img__this, #img__mma, #img__portfolio1 {
+        width: 30%;
+    }
+
+    h1 {
+        font-size: 130%;
+        width: 80%;
+        padding-left: 8%;
+    }
+
+    #nav_bar a {
+        font-size: 130%;
+        padding-left: 5rem;
+        position: relative;
+        bottom: 0.9rem;
+    }
+
+    #name__intro {
+        font-size: 250%;
+        /* padding-bottom: 2rem; */
+        position: relative;
+        top: -2rem;
+    }
+
+
+    .subtitle {
+        font-size: 150%;
+        position: relative;
+        top: -5rem;
+    }
+
+    #big__header {
+        padding-bottom: 4rem;
+    }
+
+    #work__title, #about__title, #contact__title, #skills__title {
+        font-size: 200%
+    }
+
+    .work__subtitle{
+        font-size: 130%;
+    }
+
+    .pie__img {
+        width: 30%;
+        /* background-color: violet; */
+        position: relative;
+        left: 35%;
+        font-size: 80%;
+    }
+
+    p, .skill__box, #mail  {
+        font-size: 130%;
+    }
+
+    #in__icon, #git__icon {
+        width: 40px;
+        height: 40px;
+        padding-top: 3%;
+        padding-left: 3%;
+    }
+
+    #mail {
+        font-size: 130%;
+        position: relative;
+        bottom: 4rem;
+        left: 25%;
+    }
+
+    #mail__icon {
+        width: 22px;
+        height: 22px;
+        padding-right: 1rem;
+    }
+
+    /*.projects {
+         background-color: violet;
+    }
+    
+
+    #img__this, #img__mma {
+        /position: relative;
+        right: 25%; 
+    }
+
+    #img__meli, #img__portfolio1{
+        
+    }
+
+    #pack_thisWeb, #pack_mma{ 
+         width: 50%; 
+        position: relative;
+        right: 25%; 
+    }
+
+
+    #pack_meli, #pack_portfolio1{
+        position: relative;
+        left: 25%;
+        bottom:23rem;
+  
+    }*/
+
+    .work__projects {
+        width: 100%;
+    }
+
+
+
+   }
+
+/* MEDIA 1300PX */
+
+   @media (min-width:1300px){
+    
+        #name__intro {
+            font-size: 220%;
+        }
+
+        .subtitle {
+            font-size: 150%;
+            position: relative;
+            top: -5rem;
+        }
+
+        #big__header {
+           padding: 0;
+           margin: 0;
+           height: 35rem;
+           max-height: 74rem;
+        }
+   }
+
+/* MEDIA 1500PX */
+
+@media (min-width:1500px){
+    .subtitle {
+        position: relative;
+        top:-6.5rem;
+    }
+
+    .pie__img{
+        font-size: 100%;
+    }
+}
+
+/* MEDIOA 2000PX */
+
+@media (min-width:2000px){
+    #name__intro {
+        font-size: 400%;
+        position: relative;
+        top: -5rem;
+    }
+
+    .subtitle {
+        font-size: 200%;
+        position: relative;
+        top: -17rem;
+    }
+
+    .pie__img {
+        font-size: 160%;
+    }
+
+    #work__title, #about__title, #contact__title, #skills__title{
+        font-size: 350%;
+    }
+
+    .work__subtitle{
+        font-size: 240%;
+    }
+
+    #about__text, .skill__box, #lets__talk, button {
+        font-size: 200%;
+    }
+
+    #in__icon, #git__icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    #big__header {
+        height: 63rem;
+    }
+
+    h1{
+        font-size: 200%;
+        position: relative;
+        top: 1.5rem;
+    }
+
+    #rights {
+        font-size: 120%;
+    }
+
+    #nav_bar a {
+        font-size: 200%;
+    }
+}
